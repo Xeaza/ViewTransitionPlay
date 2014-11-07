@@ -68,7 +68,7 @@
     [super prepareForSegue:segue sender:sender];
     
     TLDetailViewController *detailViewController = segue.destinationViewController;
-    
+
     detailViewController.transitioningDelegate = self;
     detailViewController.modalPresentationStyle = UIModalPresentationCustom;
     detailViewController.startingPosition = [self.tableView rectForRowAtIndexPath:self.selectedIndexPath];
